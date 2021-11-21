@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    list-style: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *::after, *::before {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+  }
+  
+  html, body {
+    line-height: 1.5;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  
+  /* Vector */
+  .main-content{
+      align-items: center;
+      margin: 0 auto;
+      display: block;
+      width: 300px;
+  }
+  
+  .search-area {
+    display: flex;
+    -webkit-box-align: center;
+    justify-content: space-between;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .search-area p {
+    color: #818A91;
+  }
+  
+  @media (max-width: 768px) {
+    .search-area {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
+  }
+  
+  .form-select {
+    width: 50.5%;
+    min-height: 38px;
+    text-indent: 0.5rem;
+    color: #818A91;
+    font-size: 1rem;
+    border: 1px solid #CED4DA;
+    border-radius: 5px;
+    margin-right: 2.5%;
+  }
+  
+  
+  .ticketCard-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .ticketCard {
+    width: 23%;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 3px 6px #00000029;
+            box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #DEE2E6;
+    border-radius: 10px;
+    margin-bottom: 63px;
+    margin-right: 24px;
+  }
+  
+  @media (max-width: 768px) {
+    .ticketCard {
+      width: 46%;
+      margin: 0 2% 40px;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .ticketCard {
+      width: 90%;
+      margin: 0 5% 30px;
+    }
+  }
+  
+  .ticketCard-img {
+    position: relative;
+  }
+  
+  .ticketCard-img a {
+    display: block;
+    overflow: hidden;
+  }
+  
+  .ticketCard-img img {
+    width: 100%;
+    height: 180px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .ticketCard-img img:hover {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+  }
+  
+  .ticketCard-region, .ticketCard-rank {
+    position: absolute;
+    border-radius: 0 5px 5px 0px;
+    color: #FFF;
+    text-align: center;
+  }
+  
+  .ticketCard-region {
+    top: -13px;
+    left: 0;
+    font-size: 1.25rem;
+    background-color: #64C3BF;
+    padding: 12px 20px;
+  }
+  
+  .ticketCard-rank {
+    bottom: -16px;
+    left: 0;
+    background-color: #00807E;
+    padding: 5px 8px;
+    min-width: 40px;
+  }
+  
+  .ticketCard-content {
+    padding: 20px;
+    height: calc(100% - 180px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .ticketCard-name {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .ticketCard-name:hover {
+    color: #64C3BF;
+  }
+  
+  .ticketCard-description {
+    color: #818A91;
+    margin-bottom: 32px;
+  }
+  
+  .ticketCard-info {
+    color: #00807E;
+    font-family: 'Roboto', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .ticketCard-num {
+    font-weight: bold;
+  }
+  
+  .ticketCard-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .ticketCard-price span {
+    font-size: 2rem;
+  }
